@@ -1,0 +1,70 @@
+// Обнуляющий файл стилей  ##########################
+@import "../style/reset";
+@import "../style/header";
+@import "../style/intro";
+@import "../style/footer";
+
+// - Импорт шрифтов ##########################
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+// Переменные для всего проекта
+:root {
+  --font: "Roboto", sans-serif;
+  --bg-color: #000;
+}
+body {
+  font-family: var(font);
+  font-weight: 400;
+  min-height: 100%;
+  margin: 0;
+  color: white;
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.link_btn {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px 8px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link_btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 63px;
+  margin-bottom: 16px;
+}
+
+.cards-title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 63px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  white-space: pre-line;
+}
