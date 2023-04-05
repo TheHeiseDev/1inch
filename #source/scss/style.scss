@@ -11,24 +11,29 @@
 :root {
   --font: "Roboto", sans-serif;
   --bg-color: #000;
+  --gray: rgba(255, 255, 255, 0.6);
 }
 body {
-  font-family: var(font);
+  font-family: var(--font);
   font-weight: 400;
+  font-size: 16px;
   min-height: 100%;
   margin: 0;
   color: white;
   background-color: var(--bg-color);
 }
+p {
+  font-family: var(--font);
+}
 
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1340px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.link_btn {
+.link-btn {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-sizing: border-box;
@@ -38,6 +43,7 @@ body {
   border-radius: 12px;
   font-size: 16px;
   line-height: 26px;
+  height: 40px;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
@@ -53,6 +59,12 @@ h2 {
   font-size: 54px;
   line-height: 63px;
   margin-bottom: 16px;
+}
+a {
+  font-family: var(--font);
+}
+button {
+  font-family: var(--font);
 }
 
 .cards-title {
