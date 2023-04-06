@@ -845,10 +845,17 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 75px;
 }
 @media (max-width: 767px) {
   .wallet__wrapper {
     flex-direction: column;
+    gap: 0px;
+  }
+}
+@media (max-width: 1120px) {
+  .wallet__wrapper {
+    gap: 0px;
   }
 }
 
@@ -865,7 +872,6 @@ h6 {
 
 .wallet-image {
   max-width: 560px !important;
-  margin-right: 140px;
 }
 @media (max-width: 1200px) {
   .wallet-image {
@@ -883,6 +889,11 @@ h6 {
     max-width: 100%;
     width: 100%;
   }
+}
+
+.tabs__wrap,
+.image__wrap {
+  flex: 1 1 50%;
 }
 
 .wallet-title {
@@ -921,7 +932,7 @@ h6 {
 
 .wallet-block-tabs-head {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   overflow-x: auto;
   margin-bottom: 16px;
   max-width: 90%;
