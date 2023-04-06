@@ -68,6 +68,10 @@ h2 {
   font-size: 54px;
   line-height: 63px;
   margin-bottom: 16px;
+
+  @media (max-width: 720px) {
+    font-weight: 500;
+  }
 }
 a {
   font-family: var(--font);
