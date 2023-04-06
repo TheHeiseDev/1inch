@@ -1,0 +1,58 @@
+.networks {
+}
+
+.networks__wrapper h2 {
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  width: 844px;
+  margin: 0 auto 48px;
+}
+.networks-block {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 32px;
+  margin: 0 40px;
+}
+.network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.network-image {
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+}
+.network-text {
+}
+.total-values-content {
+}
+.total-values {
+  box-sizing: border-box;
+  min-height: 178px;
+  padding: 40px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  border-radius: 40px;
+  background: #06070a;
+  position: relative;
+  z-index: 20;
+  border: 1px solid #8080806b;
+}
+.total-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.total-value .text {
+  text-align: left;
+}
+.big-number {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}

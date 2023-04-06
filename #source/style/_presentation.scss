@@ -1,0 +1,97 @@
+.presentation {
+  display: block !important;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main-top-bg-1 {
+  max-width: 100%;
+}
+
+.main-top-bg-2 {
+  will-change: transform;
+  transform: translate3d(0px, 43px, 0px);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-top-bg-2-1 {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-top-bg-3 {
+  position: absolute;
+  height: 35%;
+  right: 14%;
+  bottom: 45%;
+  transform: rotate(7deg);
+}
+
+.presentation-mobile {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .presentation {
+    display: none !important;
+  }
+  .presentation-mobile {
+    display: block;
+  }
+}
+.presentation-mobile {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+}
+.mains-top-bg-1 {
+  opacity: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.mains-top-bg-2 {
+  transform: translate3d(0px, 1px, 0px);
+  will-change: transform;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mains-top-bg-2-1 {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.mains-top-bg-3 {
+  position: absolute;
+  height: 35%;
+  right: 14%;
+  bottom: 39%;
+  transform: rotate(7deg);
+}

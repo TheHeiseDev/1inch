@@ -2,6 +2,8 @@
 @import "../style/reset";
 @import "../style/header";
 @import "../style/intro";
+@import "../style/presentation";
+@import "../style/networks";
 @import "../style/footer";
 
 // - Импорт шрифтов ##########################
@@ -26,9 +28,15 @@ p {
   font-family: var(--font);
 }
 
-.container {
+.container-header {
   width: 100%;
   max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
 }

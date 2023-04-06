@@ -1,17 +1,22 @@
 const body = document.querySelector("body");
-const logo = document.querySelector(".header__logo svg");
+const logo = document.querySelector(".header__logo");
 
 // БУРГЕР МЕНЮ
 const burger = document.querySelector(".header__burger");
 const menu = document.querySelector(".header__menu");
+const submenuLink = document.querySelector(".submenu-position");
+const submenu = document.querySelector(".mobile-submenu__wrapper");
 
 const bodyy = document.body;
 const mainWidth = bodyy.clientWidth;
 
 burger.addEventListener("click", menuFunc);
 
+submenuLink.addEventListener("click", () => {
+  submenu.classList.toggle("active");
+});
+
 function menuFunc() {
-  logo.classList.toggle("rotate");
   burger.classList.toggle("active");
   menu.classList.toggle("active");
   bodyy.classList.toggle("active");
@@ -32,13 +37,12 @@ window.addEventListener("resize", function (e) {
 const links = Array.from(menu.children);
 
 // Для каждого элемента меню при клике вызываем ф-ию
-links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
-});
+// links.forEach((link) => {
+//   link.addEventListener("click", closeOnClick);
+// });
 
 // Закрытие попапа при клике на меню
 function closeOnClick() {
-  logo.classList.remove("rotate");
   burger.classList.remove("active");
   menu.classList.remove("active");
   bodyy.classList.remove("active");
