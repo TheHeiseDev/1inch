@@ -1,5 +1,5 @@
 .news {
-  margin-top: 350px;
+  margin-top: 245px;
 
   @media (max-width: 1000px) {
     margin-top: 160px;
@@ -22,15 +22,17 @@
 }
 .news-text {
   max-width: 480px;
+
+  & p {
+    @media (max-width: 720px) {
+      white-space: normal;
+    }
+  }
   @media (max-width: 720px) {
     max-width: 100%;
   }
 }
-.news-text p {
-  @media (max-width: 720px) {
-    white-space: normal;
-  }
-}
+
 .news-title {
   @media (max-width: 1000px) {
     font-size: 48px;
@@ -45,13 +47,20 @@
 }
 .mobile-title {
 }
-.news-button span {
-  color: white;
+.news-button {
+  transition: all 0.3s ease;
+  & span {
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .news-image {
-  max-width: 500px;
+  max-width: 500px !important;
   @media (max-width: 720px) {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }

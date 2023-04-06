@@ -5,6 +5,7 @@
 @import "../style/presentation";
 @import "../style/networks";
 @import "../style/news";
+@import "../style/wallet";
 @import "../style/footer";
 
 // - Импорт шрифтов ##########################
@@ -13,7 +14,7 @@
 // Переменные для всего проекта
 :root {
   --font: "Roboto", sans-serif;
-  --bg-color: #000;
+  --bg-color: #06070a;
   --gray: rgba(255, 255, 255, 0.6);
 }
 body {
@@ -48,7 +49,7 @@ p {
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
-  padding: 8px 12px 8px 20px;
+  padding: 20px 16px 20px 20px;
   border-radius: 12px;
   font-size: 16px;
   line-height: 26px;
@@ -64,7 +65,7 @@ p {
 }
 
 h2 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 54px;
   line-height: 63px;
   margin-bottom: 16px;
@@ -91,5 +92,4 @@ button {
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
-  white-space: pre-line;
 }
