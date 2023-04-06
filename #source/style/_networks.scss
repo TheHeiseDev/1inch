@@ -42,6 +42,7 @@
   z-index: 20;
   border: 1px solid #8080806b;
 }
+
 .total-value {
   display: flex;
   flex-direction: column;
@@ -55,4 +56,46 @@
   line-height: 56px;
   letter-spacing: 0.05em;
   margin-bottom: 16px;
+
+  @media (max-width: 1000px) {
+    font-size: 27px;
+    margin-bottom: 4px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .total-values {
+    border: none;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .total-values {
+    border: none;
+    background-color: black;
+    padding: 16px;
+    min-height: 130px;
+  }
+}
+@media (max-width: 900px) {
+  .total-values {
+    border: none;
+    background-color: black;
+    grid-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .total-value {
+    text-align: center;
+    align-items: center;
+  }
+  .total-value .text {
+    text-align: center;
+  }
 }

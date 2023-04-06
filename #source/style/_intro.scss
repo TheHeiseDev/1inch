@@ -49,9 +49,12 @@
     background-color: black;
   }
   .intro__wrapper {
+    align-items: flex-start;
     height: 660px;
     box-sizing: border-box;
-    margin-top: 210px;
+    margin-top: 180px;
+    margin-bottom: -100px;
+    padding: 0;
   }
   .intro::before {
     content: "";
@@ -62,6 +65,9 @@
     left: 0;
     right: 0;
     background: linear-gradient(rgba(6, 7, 10, 0), #06070a);
+  }
+  .main-start-screen {
+    padding-top: 20px;
   }
 
   .buttons {
