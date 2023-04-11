@@ -1,0 +1,79 @@
+.news-block {
+  margin-top: 245px;
+
+  @media (max-width: 1000px) {
+    margin-top: 160px;
+  }
+  @media (max-width: 720px) {
+    margin-top: 80px;
+  }
+}
+
+.news-block__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  background: url("./../../img/news-block-background.webp") no-repeat;
+  background-size: cover;
+  background-position: right;
+  border-radius: 24px;
+  min-height: 400px;
+
+  @media (max-width: 1100px) {
+    background-position: center;
+    padding-left: 20px;
+  }
+  @media (max-width: 680px) {
+    height: 680px;
+    padding: 0 16px;
+    background: url("./../../img/news-block-background-mobile.webp") no-repeat;
+    background-size: cover;
+  }
+}
+
+.news-block-left {
+  @media (max-width: 1110px) {
+    max-width: 300px;
+  }
+  @media (max-width: 680px) {
+    position: absolute;
+    bottom: 32px;
+    width: calc(100% - 32px);
+    max-width: none;
+  }
+}
+
+.news-block-title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 63px;
+
+  @media (max-width: 1110px) {
+    font-size: 36px;
+  }
+}
+.news-block-text {
+  max-width: 415px;
+  margin-bottom: 48px;
+  margin-top: 16px;
+  @media (max-width: 680px) {
+    margin-bottom: 0;
+  }
+}
+.news-block-button:hover {
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+.news-block-button {
+  background: radial-gradient(
+    63.89% 180.95% at 15.94% 154.76%,
+    #16979f 0%,
+    rgba(22, 151, 159, 0) 100%
+  );
+}
