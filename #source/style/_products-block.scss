@@ -57,7 +57,7 @@
   position: relative;
   z-index: 1;
 }
-.product-cards-title {
+.card-title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -76,7 +76,7 @@
   }
 }
 
-.product-cards-text {
+.cards-text {
   @media (max-width: 650px) {
     font-size: 15px;
   }
@@ -86,7 +86,7 @@
 .card-button-wrap {
   width: 100%;
 }
-.product-cards-btn {
+.cards-btn {
   @media (max-width: 650px) {
     width: 100%;
     justify-content: center;
