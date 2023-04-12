@@ -1143,6 +1143,7 @@ h6 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
+  line-height: 1;
   width: 100%;
   text-align: left;
 }
@@ -1224,6 +1225,79 @@ h6 {
     text-align: left;
     width: 100%;
   }
+}
+
+.social {
+  margin-top: 245px;
+}
+@media (max-width: 1000px) {
+  .social {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 720px) {
+  .social {
+    margin-top: 80px;
+  }
+}
+
+.social-network-title {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .social-network-title {
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .social-network-title {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .social-network-title {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 650px) {
+  .social-network-title {
+    font-size: 27px;
+    line-height: 32px;
+    width: 100%;
+  }
+}
+
+.social__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+@media (max-width: 650px) {
+  .social__wrapper {
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 389px) {
+  .social__wrapper {
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+
+.social-network-link {
+  max-width: 120px;
+  text-align: center;
+}
+
+.social-network-icon {
+  max-width: 120px;
+  max-height: 120px;
 }
 
 footer {
