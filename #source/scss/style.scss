@@ -80,6 +80,7 @@ button {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 .link-btn:hover {
   cursor: pointer;
@@ -97,4 +98,9 @@ button {
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
+}
+
+.line {
+  border: 1px solid rgb(31, 31, 31);
+  margin-bottom: 72px;
 }
