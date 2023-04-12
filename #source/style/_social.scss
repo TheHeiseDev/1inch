@@ -40,10 +40,6 @@
     margin: 0;
     justify-content: space-between;
   }
-  @media (max-width: 389px) {
-    margin: 0;
-    justify-content: space-around;
-  }
 }
 .social-network-link {
   max-width: 120px;
@@ -52,6 +48,10 @@
 .social-network-icon {
   max-width: 120px;
   max-height: 120px;
+
+  @media (max-width: 650px) {
+    max-height: 80px;
+  }
 }
 .text {
 }
