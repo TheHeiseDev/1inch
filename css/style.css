@@ -1288,6 +1288,12 @@ h6 {
   max-width: 120px;
   text-align: center;
 }
+.social-network-link:hover img {
+  transform: scale(1.2);
+}
+.social-network-link img {
+  transition: transform 0.3s ease;
+}
 
 .social-network-icon {
   max-width: 120px;
