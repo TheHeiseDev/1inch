@@ -59,10 +59,12 @@
     grid-row-gap: 16px;
     height: 270px;
     overflow: hidden;
+    overflow-y: scroll;
   }
   @media (max-width: 720px) {
     grid-template-columns: repeat(3, 140px);
     height: 204px;
+    overflow-y: scroll;
   }
   @media (max-width: 480px) {
     grid-template-columns: repeat(2, 140px);

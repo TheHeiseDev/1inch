@@ -1,6 +1,22 @@
 const body = document.querySelector("body");
 const logo = document.querySelector(".header__logo");
 
+// Добавлнеия blur эффекта к Хейдеру
+const headerElement = document.querySelector(".header");
+
+// if (window.scrollY > 100) {
+// console.log(window.scrollY )
+// } else {
+//   headerElement.classList.remove("h-blur");
+// }
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    headerElement.classList.add("h-blur");
+  } else {
+    headerElement.classList.remove("h-blur");
+  }
+});
+
 // БУРГЕР МЕНЮ
 const burger = document.querySelector(".header__burger");
 const menu = document.querySelector(".header__menu");
@@ -22,7 +38,7 @@ function menuFunc() {
   bodyy.classList.toggle("active");
 }
 
-// Закрывать бургер меню когда окно браузера больше 767
+// Закрывать бургер меню когда окно браузера больше 500
 window.addEventListener("resize", function (e) {
   const size = e.currentTarget.outerWidth;
 
@@ -42,8 +58,8 @@ const links = Array.from(menu.children);
 // });
 
 // Закрытие попапа при клике на меню
-function closeOnClick() {
-  burger.classList.remove("active");
-  menu.classList.remove("active");
-  bodyy.classList.remove("active");
-}
+// function closeOnClick() {
+//   burger.classList.remove("active");
+//   menu.classList.remove("active");
+//   bodyy.classList.remove("active");
+// }

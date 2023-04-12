@@ -13,6 +13,10 @@
 }
 .product-block__header {
   margin-bottom: 64px;
+
+  @media (max-width: 720px) {
+    margin-bottom: 30px;
+  }
 }
 .product-block__title {
   @media (max-width: 1000px) {
@@ -82,8 +86,7 @@
     font-size: 15px;
   }
 }
-.card-image {
-}
+
 .card-button-wrap {
   width: 100%;
 }

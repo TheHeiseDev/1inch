@@ -1,5 +1,28 @@
 .header {
   padding: 10px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  transition: all 0.2s ease;
+
+  & .header__logo a img {
+    transition: all 0.2s ease;
+  }
+}
+
+.h-blur {
+  background: rgba(7, 7, 16, 0.7);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  padding: 0 !important;
+
+  & .header__logo a img {
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+  }
 }
 
 .header__wrapper {
@@ -8,13 +31,14 @@
   align-items: center;
 }
 .header__logo {
+  z-index: 101;
 }
 .header__menu {
 }
 .submenu-position {
   position: relative;
   cursor: pointer;
-  height: 100%;
+  // height: 100%;
   display: flex;
   align-items: center;
 }
@@ -22,7 +46,8 @@
 .header__menu .menu {
   &__item {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+    height: 100%;
   }
   &__item a:hover {
     color: white;
@@ -84,7 +109,7 @@
 
 .submenu__wrapper {
   position: absolute;
-  top: 0px;
+  top: -5px;
   left: -180px;
   padding-top: 50px;
   z-index: 50;
@@ -97,8 +122,7 @@
 .submenu-navbar {
   box-sizing: border-box;
   width: 1136px;
-  background: rgba(7, 7, 16, 0.7);
-  backdrop-filter: blur(60px);
+  background: rgb(7 7 16 / 100%);
   -webkit-backdrop-filter: blur(60px);
   border-radius: 24px;
   display: grid;
@@ -238,6 +262,9 @@
 
 // burger
 @media (max-width: 1000px) {
+  .submenu__wrapper {
+    display: none;
+  }
   .header__action {
     display: none;
   }
@@ -311,7 +338,7 @@
     display: none;
   }
   .header__menu.active {
-    bottom: 2px;
+    top: 0%;
     left: 14px;
     background: rgba(7, 7, 16, 0.7);
     backdrop-filter: blur(50px);
@@ -319,17 +346,16 @@
   }
 
   .header__menu {
-    position: fixed;
+    position: absolute;
     margin-left: -15px;
+    top: -2000%;
     bottom: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--bg-color);
     transition: all 0.3s ease 0s;
     z-index: 100;
-    padding: 80px 0px 20px 0px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    padding: 100px 0px 20px 0px;
     border-top: 1px solid rgba(128, 128, 128, 0.296);
     will-change: transition;
   }
@@ -344,6 +370,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 120px;
   }
 
   .menu__link {

@@ -13,6 +13,10 @@
 }
 .cards-header {
   margin-bottom: 64px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 35px;
+  }
 }
 .cards-header-title {
   @media (max-width: 1000px) {

@@ -2,6 +2,7 @@
 //@prepros-append script.js
 //@prepros-append animation.js
 
+// Функционал работы табов  
 const tabItems = document.querySelectorAll(".wallet-block-tab");
 
 tabItems.forEach((tab) => {
@@ -18,3 +19,4 @@ function changeTab(src, text) {
   welletTitle.textContent = text;
   imageBlock.src = src;
 }
+
