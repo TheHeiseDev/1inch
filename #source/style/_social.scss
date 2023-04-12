@@ -45,14 +45,13 @@
   max-width: 120px;
   text-align: center;
 
-    & img {git
-  transition: transform 0.3s ease;
+  & img {
+    transition: transform 0.3s ease;
   }
 
   &:hover img {
     transform: scale(1.2);
   }
-
 }
 .social-network-icon {
   max-width: 120px;
