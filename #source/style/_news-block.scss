@@ -26,7 +26,7 @@
     padding-left: 20px;
   }
   @media (max-width: 680px) {
-    height: 680px;
+    height: 540px;
     padding: 0 16px;
     background: url("./../../img/news-block-background-mobile.webp") no-repeat;
     background-size: cover;
@@ -53,13 +53,17 @@
   @media (max-width: 1110px) {
     font-size: 36px;
   }
+  @media (max-width: 680px) {
+    font-weight: 600;
+    font-size: 26px;
+  }
 }
 .news-block-text {
   max-width: 415px;
   margin-bottom: 48px;
   margin-top: 16px;
   @media (max-width: 680px) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 .news-block-button:hover {

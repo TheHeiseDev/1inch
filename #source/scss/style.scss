@@ -7,6 +7,7 @@
 @import "../style/news";
 @import "../style/wallet";
 @import "../style/news-block";
+@import "../style/products-block";
 @import "../style/footer";
 
 // - Импорт шрифтов ##########################
@@ -28,6 +29,23 @@ body {
   background-color: var(--bg-color);
 }
 p {
+  font-family: var(--font);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 63px;
+  margin-bottom: 16px;
+
+  @media (max-width: 720px) {
+    font-weight: 500;
+  }
+}
+a {
+  font-family: var(--font);
+}
+button {
   font-family: var(--font);
 }
 
@@ -60,26 +78,9 @@ p {
   text-decoration: none;
   font-weight: 500;
 }
-.link_btn:hover {
+.link-btn:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.2);
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 63px;
-  margin-bottom: 16px;
-
-  @media (max-width: 720px) {
-    font-weight: 500;
-  }
-}
-a {
-  font-family: var(--font);
-}
-button {
-  font-family: var(--font);
 }
 
 .cards-title {
