@@ -1439,7 +1439,12 @@ h6 {
     padding-top: 50px;
   }
 }
-
+.footer a {
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: white;
+}
 .footer p {
   line-height: 1.2;
 }

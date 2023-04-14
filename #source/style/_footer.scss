@@ -5,10 +5,19 @@
   @media (max-width: 650px) {
     padding-top: 50px;
   }
+
+  & a {
+    transition: color 0.3s ease;
+  }
+  & a:hover {
+    color: white;
+  }
+
+  & p {
+    line-height: 1.2;
+  }
 }
-.footer p {
-  line-height: 1.2;
-}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
